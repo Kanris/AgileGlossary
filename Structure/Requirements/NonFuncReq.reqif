@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <REQ-IF xmlns="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0">
   <THE-HEADER>
-    <REQ-IF-HEADER IDENTIFIER="rmf-f424977a-cd2f-4ad9-8867-7d98d51cfeae">
+    <REQ-IF-HEADER IDENTIFIER="rmf-88c718a5-ee3e-4d89-b529-a3758ee79025">
       <COMMENT>Created by: Alexey</COMMENT>
       <CREATION-TIME>2016-12-07T11:34:40.607+02:00</CREATION-TIME>
       <REQ-IF-TOOL-ID>ProR (http://pror.org)</REQ-IF-TOOL-ID>
@@ -72,9 +72,9 @@
         </SPECIFICATION-TYPE>
       </SPEC-TYPES>
       <SPEC-OBJECTS>
-        <SPEC-OBJECT IDENTIFIER="_YKr-CLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:38:52.132+02:00">
+        <SPEC-OBJECT IDENTIFIER="_YKr-CLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T13:40:44.248+02:00">
           <VALUES>
-            <ATTRIBUTE-VALUE-STRING THE-VALUE="The terms should be kept in MySQL database">
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The terms should be kept in SQLite database">
               <DEFINITION>
                 <ATTRIBUTE-DEFINITION-STRING-REF>_YKr-BbxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
               </DEFINITION>
@@ -171,7 +171,6 @@
           <SOURCE>
             <SPEC-OBJECT-REF>_3pUIELxgEeaTW79kLcqDTA</SPEC-OBJECT-REF>
           </SOURCE>
-          <TYPE/>
         </SPEC-RELATION>
         <SPEC-RELATION IDENTIFIER="_CWCUALxiEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:46:26.634+02:00">
           <TARGET>
@@ -180,7 +179,6 @@
           <SOURCE>
             <SPEC-OBJECT-REF>_3pUIELxgEeaTW79kLcqDTA</SPEC-OBJECT-REF>
           </SOURCE>
-          <TYPE/>
         </SPEC-RELATION>
       </SPEC-RELATIONS>
       <SPECIFICATIONS>
