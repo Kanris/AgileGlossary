@@ -1,2 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5T0QILxiEeaTW79kLcqDTA" name="NewModel"/>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5T0QILxiEeaTW79kLcqDTA" name="NewModel">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_FZhWULxmEeaTW79kLcqDTA" name="User">
+    <eAnnotations xmi:id="_FZlnwLxmEeaTW79kLcqDTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_FZlnwbxmEeaTW79kLcqDTA" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HdpKMLxmEeaTW79kLcqDTA" name="Add term"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_IRlIkLxmEeaTW79kLcqDTA" name="Edit term">
+    <extend xmi:id="_-an_oLxnEeaTW79kLcqDTA" extendedCase="_PByRELxmEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_IoTmgLxmEeaTW79kLcqDTA" name="Search term">
+    <extend xmi:id="_7gS8gLxnEeaTW79kLcqDTA" extendedCase="_PByRELxmEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_MCTBILxmEeaTW79kLcqDTA" name="Remove term">
+    <extend xmi:id="_TdOhoLxmEeaTW79kLcqDTA" extendedCase="_IRlIkLxmEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PByRELxmEeaTW79kLcqDTA" name="View term list"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UDjh0LxmEeaTW79kLcqDTA" memberEnd="_UD_msLxmEeaTW79kLcqDTA _UEANwLxmEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_UD_msLxmEeaTW79kLcqDTA" type="_FZhWULxmEeaTW79kLcqDTA" association="_UDjh0LxmEeaTW79kLcqDTA"/>
+    <ownedEnd xmi:id="_UEANwLxmEeaTW79kLcqDTA" type="_HdpKMLxmEeaTW79kLcqDTA" association="_UDjh0LxmEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Vh1dsLxmEeaTW79kLcqDTA" memberEnd="_Vh1dsbxmEeaTW79kLcqDTA _Vh358LxmEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_Vh1dsbxmEeaTW79kLcqDTA" type="_FZhWULxmEeaTW79kLcqDTA" association="_Vh1dsLxmEeaTW79kLcqDTA"/>
+    <ownedEnd xmi:id="_Vh358LxmEeaTW79kLcqDTA" type="_PByRELxmEeaTW79kLcqDTA" association="_Vh1dsLxmEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_FBEkoLxnEeaTW79kLcqDTA" name="User interface">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_j4m5gLxnEeaTW79kLcqDTA" client="_FBEkoLxnEeaTW79kLcqDTA" supplier="_G6u08LxnEeaTW79kLcqDTA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_lARFILxnEeaTW79kLcqDTA" client="_FBEkoLxnEeaTW79kLcqDTA" supplier="_aN8LALxnEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_G6u08LxnEeaTW79kLcqDTA" name="Business processing">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_XgtvwLxnEeaTW79kLcqDTA" client="_G6u08LxnEeaTW79kLcqDTA" supplier="_P6lE0LxnEeaTW79kLcqDTA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_gHweELxnEeaTW79kLcqDTA" client="_G6u08LxnEeaTW79kLcqDTA" supplier="_aN8LALxnEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_P6lE0LxnEeaTW79kLcqDTA" name="Data">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_cWdWsLxnEeaTW79kLcqDTA" client="_P6lE0LxnEeaTW79kLcqDTA" supplier="_aN8LALxnEeaTW79kLcqDTA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_aN8LALxnEeaTW79kLcqDTA" name="Utility"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_wxsr0LxnEeaTW79kLcqDTA" name="Scenario_0"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_B8arYLxoEeaTW79kLcqDTA" name="Scenario_1">
+    <ownedAttribute xmi:id="_FFt-oLxoEeaTW79kLcqDTA" name="Actor2" type="_FFtXkLxoEeaTW79kLcqDTA"/>
+    <ownedAttribute xmi:id="_SknzwLxoEeaTW79kLcqDTA" name="Class1" type="_SknMsLxoEeaTW79kLcqDTA"/>
+    <ownedAttribute xmi:id="_WGoh8bxoEeaTW79kLcqDTA" name="Actor3" type="_WGn64LxoEeaTW79kLcqDTA"/>
+    <ownedAttribute xmi:id="_YNgu4bxoEeaTW79kLcqDTA" name="Class2" type="_YNgH0LxoEeaTW79kLcqDTA"/>
+    <ownedAttribute xmi:id="_u7IWULxoEeaTW79kLcqDTA" name="Class3" type="_u7HvQLxoEeaTW79kLcqDTA"/>
+    <ownedAttribute xmi:id="_dL1NkrxpEeaTW79kLcqDTA" name="Class4" type="_dL1NkLxpEeaTW79kLcqDTA"/>
+    <ownedAttribute xmi:id="_pphggLxtEeaTW79kLcqDTA" name="Actor4" type="_ppg5cLxtEeaTW79kLcqDTA"/>
+    <ownedAttribute xmi:id="_EXYDMLxuEeaTW79kLcqDTA" name="Class9" type="_EXXcILxuEeaTW79kLcqDTA"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_agblALxuEeaTW79kLcqDTA" name="MainWindow">
+      <ownedAttribute xmi:id="_agblAbxuEeaTW79kLcqDTA" name="dbhelper" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_agblArxuEeaTW79kLcqDTA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_agblA7xuEeaTW79kLcqDTA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_agblBLxuEeaTW79kLcqDTA" name="terms" visibility="private" type="_kFcJsLxpEeaTW79kLcqDTA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_agblBbxuEeaTW79kLcqDTA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_agblBrxuEeaTW79kLcqDTA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_agblB7xuEeaTW79kLcqDTA" name="DisplayTermList"/>
+      <ownedOperation xmi:id="_agblCLxuEeaTW79kLcqDTA" name="AddTerm"/>
+      <ownedOperation xmi:id="_agblCbxuEeaTW79kLcqDTA" name="EditTerm">
+        <ownedParameter xmi:id="_agblCrxuEeaTW79kLcqDTA" name="term" type="_kFcJsLxpEeaTW79kLcqDTA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_agblC7xuEeaTW79kLcqDTA" name="SearchTerm">
+        <ownedParameter xmi:id="_agblDLxuEeaTW79kLcqDTA" name="termName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_FFtXkLxoEeaTW79kLcqDTA" name="Actor2"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SknMsLxoEeaTW79kLcqDTA" name="Class1"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WGn64LxoEeaTW79kLcqDTA" name="Actor3"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YNgH0LxoEeaTW79kLcqDTA" name="Class2">
+    <ownedOperation xmi:id="_ZLxG4LxoEeaTW79kLcqDTA" name="Operation_1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_u7HvQLxoEeaTW79kLcqDTA" name="Class3">
+    <ownedOperation xmi:id="_wPjyoLxoEeaTW79kLcqDTA" name="Operation_1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dL1NkLxpEeaTW79kLcqDTA" name="Class4"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kFcJsLxpEeaTW79kLcqDTA" name="Term">
+    <ownedAttribute xmi:id="_CLwyILxsEeaTW79kLcqDTA" name="id" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CLxZMLxsEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CLxZMbxsEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_weKZ4LxpEeaTW79kLcqDTA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weKZ4bxpEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weLA8LxpEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w-6WgLxpEeaTW79kLcqDTA" name="transcription" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w-6WgbxpEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w-69kLxpEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_yWUOULxpEeaTW79kLcqDTA" name="description" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yWUOUbxpEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yWUOUrxpEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_D2h8wLxqEeaTW79kLcqDTA" name="Term">
+      <ownedParameter xmi:id="_I5ywYLxsEeaTW79kLcqDTA" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_pAHegLxqEeaTW79kLcqDTA" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_vDJ_ALxqEeaTW79kLcqDTA" name="transcription">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_xqktMLxqEeaTW79kLcqDTA" name="description">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Lf9zULxqEeaTW79kLcqDTA" name="toString"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kud4kLxpEeaTW79kLcqDTA" name="MainWindow">
+    <ownedAttribute xmi:id="_R7ivoLxqEeaTW79kLcqDTA" name="dbhelper" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R7ivobxqEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R7ivorxqEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_YxyOsLxqEeaTW79kLcqDTA" name="terms" visibility="private" type="_kFcJsLxpEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxyOsbxqEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxyOsrxqEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iwi94LxqEeaTW79kLcqDTA" name="DisplayTermList"/>
+    <ownedOperation xmi:id="_lNJjMLxqEeaTW79kLcqDTA" name="AddTerm"/>
+    <ownedOperation xmi:id="_mBct8LxqEeaTW79kLcqDTA" name="EditTerm">
+      <ownedParameter xmi:id="_-XbaULxqEeaTW79kLcqDTA" name="term" type="_kFcJsLxpEeaTW79kLcqDTA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_nA1HULxqEeaTW79kLcqDTA" name="SearchTerm">
+      <ownedParameter xmi:id="_5dq2ELxqEeaTW79kLcqDTA" name="termName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lf2SMLxpEeaTW79kLcqDTA" name="AddEditWindow">
+    <ownedAttribute xmi:id="_DMjWMLxrEeaTW79kLcqDTA" name="type" visibility="private" type="_NOacsLxrEeaTW79kLcqDTA" isReadOnly="true">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DMjWMbxrEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DMj9QLxrEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_EYdIoLxrEeaTW79kLcqDTA" name="term" visibility="private" type="_kFcJsLxpEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EYdIobxrEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EYdIorxrEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_uLbQULxrEeaTW79kLcqDTA" name="AddEdit"/>
+    <ownedOperation xmi:id="_uda_QLxrEeaTW79kLcqDTA" name="Delete"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_l18eALxpEeaTW79kLcqDTA" name="DBTermHelper">
+    <ownedAttribute xmi:id="_zX58QLxrEeaTW79kLcqDTA" name="connection" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zX58QbxrEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zX6jULxrEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_5MlQoLxrEeaTW79kLcqDTA" name="DBTermHelper"/>
+    <ownedOperation xmi:id="_6ZJxcLxrEeaTW79kLcqDTA" name="Add">
+      <ownedParameter xmi:id="_96cG4LxrEeaTW79kLcqDTA" name="newTerm" type="_kFcJsLxpEeaTW79kLcqDTA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_63R34LxrEeaTW79kLcqDTA" name="Edit"/>
+    <ownedOperation xmi:id="_7IyeoLxrEeaTW79kLcqDTA" name="Remove"/>
+    <ownedOperation xmi:id="_F8O9oLxtEeaTW79kLcqDTA" name="GetTerms"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_NOacsLxrEeaTW79kLcqDTA" name="WindowType">
+    <ownedAttribute xmi:id="_NlEpMLxrEeaTW79kLcqDTA" name="ADD" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NlEpMbxrEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NlFQQLxrEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Nz_O8LxrEeaTW79kLcqDTA" name="EDIT" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nz_O8bxrEeaTW79kLcqDTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nz_O8rxrEeaTW79kLcqDTA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cIFxQLxsEeaTW79kLcqDTA" name="A_WindowType" memberEnd="_cIFxRLxsEeaTW79kLcqDTA" navigableOwnedEnd="_cIFxRLxsEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_cIFxRLxsEeaTW79kLcqDTA" name="windowType" type="_NOacsLxrEeaTW79kLcqDTA" association="_cIFxQLxsEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cIFxRbxsEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cIFxRrxsEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ar9W0LxtEeaTW79kLcqDTA">
+    <name xsi:nil="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Kce1sLxtEeaTW79kLcqDTA" name="A_OpenAddEditWindow" memberEnd="_Kce1sbxtEeaTW79kLcqDTA _Kce1tLxtEeaTW79kLcqDTA" navigableOwnedEnd="_Kce1sbxtEeaTW79kLcqDTA _Kce1tLxtEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_Kce1sbxtEeaTW79kLcqDTA" name="mainWindow" type="_kud4kLxpEeaTW79kLcqDTA" association="_Kce1sLxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kce1srxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kce1s7xtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_Kce1tLxtEeaTW79kLcqDTA" name="addEditWindows" type="_lf2SMLxpEeaTW79kLcqDTA" association="_Kce1sLxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kce1tbxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kce1trxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_d3om0LxtEeaTW79kLcqDTA" memberEnd="_d3pN4LxtEeaTW79kLcqDTA _d3rqILxtEeaTW79kLcqDTA" navigableOwnedEnd="_d3rqILxtEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_d3pN4LxtEeaTW79kLcqDTA" name="mainWindows" type="_kud4kLxpEeaTW79kLcqDTA" association="_d3om0LxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3qcALxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3rDELxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_d3rqILxtEeaTW79kLcqDTA" name="dBTermHelpers" type="_l18eALxpEeaTW79kLcqDTA" association="_d3om0LxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3s4QLxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3s4QbxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gWo_4LxtEeaTW79kLcqDTA" memberEnd="_gWo_4bxtEeaTW79kLcqDTA _gWq1ELxtEeaTW79kLcqDTA" navigableOwnedEnd="_gWq1ELxtEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_gWo_4bxtEeaTW79kLcqDTA" name="addEditWindows" type="_lf2SMLxpEeaTW79kLcqDTA" association="_gWo_4LxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gWqOALxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gWqOAbxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_gWq1ELxtEeaTW79kLcqDTA" name="windowTypes" type="_NOacsLxrEeaTW79kLcqDTA" association="_gWo_4LxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gWrcILxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gWrcIbxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g6c3kLxtEeaTW79kLcqDTA" memberEnd="_g6deoLxtEeaTW79kLcqDTA _g6eswLxtEeaTW79kLcqDTA" navigableOwnedEnd="_g6eswLxtEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_g6deoLxtEeaTW79kLcqDTA" name="addEditWindows" type="_lf2SMLxpEeaTW79kLcqDTA" association="_g6c3kLxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g6eFsLxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g6eFsbxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_g6eswLxtEeaTW79kLcqDTA" name="terms" type="_kFcJsLxpEeaTW79kLcqDTA" association="_g6c3kLxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g6eswbxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g6fT0LxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hfYJkLxtEeaTW79kLcqDTA" memberEnd="_hfYwoLxtEeaTW79kLcqDTA _hfZ-wbxtEeaTW79kLcqDTA" navigableOwnedEnd="_hfZ-wbxtEeaTW79kLcqDTA">
+    <ownedEnd xmi:id="_hfYwoLxtEeaTW79kLcqDTA" name="mainWindows" type="_kud4kLxpEeaTW79kLcqDTA" association="_hfYJkLxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hfZXsLxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hfZ-wLxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_hfZ-wbxtEeaTW79kLcqDTA" name="terms" type="_kFcJsLxpEeaTW79kLcqDTA" association="_hfYJkLxtEeaTW79kLcqDTA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hfal0LxtEeaTW79kLcqDTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hfbM4LxtEeaTW79kLcqDTA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ppg5cLxtEeaTW79kLcqDTA" name="Actor4"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EXXcILxuEeaTW79kLcqDTA" name="Class9"/>
+</uml:Model>
