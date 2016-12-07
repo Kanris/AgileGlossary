@@ -235,4 +235,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_ppg5cLxtEeaTW79kLcqDTA" name="Actor4"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_EXXcILxuEeaTW79kLcqDTA" name="Class9"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_rRgVgLxuEeaTW79kLcqDTA" name="NewModel" node="_tfw80LxuEeaTW79kLcqDTA">
+    <node xmi:type="uml:DataStoreNode" xmi:id="_tfw80LxuEeaTW79kLcqDTA" name="DataStore1"/>
+  </packagedElement>
 </uml:Model>
