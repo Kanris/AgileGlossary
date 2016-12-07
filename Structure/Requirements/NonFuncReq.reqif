@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REQ-IF xmlns="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0">
+  <THE-HEADER>
+    <REQ-IF-HEADER IDENTIFIER="rmf-f424977a-cd2f-4ad9-8867-7d98d51cfeae">
+      <COMMENT>Created by: Alexey</COMMENT>
+      <CREATION-TIME>2016-12-07T11:34:40.607+02:00</CREATION-TIME>
+      <REQ-IF-TOOL-ID>ProR (http://pror.org)</REQ-IF-TOOL-ID>
+      <REQ-IF-VERSION>1.0</REQ-IF-VERSION>
+      <SOURCE-TOOL-ID>ProR (http://pror.org)</SOURCE-TOOL-ID>
+      <TITLE>Non-functional requirements document</TITLE>
+    </REQ-IF-HEADER>
+  </THE-HEADER>
+  <CORE-CONTENT>
+    <REQ-IF-CONTENT>
+      <DATATYPES>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_YKr-A7xgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:34:40.607+02:00" LONG-NAME="T_String32k" MAX-LENGTH="32000"/>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_hBtpELxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:35:37.532+02:00" LONG-NAME="T_ID"/>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_iTQJcLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:35:45.521+02:00" LONG-NAME="T_AUTHOR"/>
+        <DATATYPE-DEFINITION-ENUMERATION IDENTIFIER="_ktUYILxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:35:54.621+02:00" LONG-NAME="T_STATUS">
+          <SPECIFIED-VALUES>
+            <ENUM-VALUE IDENTIFIER="_l7pMcLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:36:08.623+02:00" LONG-NAME="New">
+              <PROPERTIES>
+                <EMBEDDED-VALUE/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+            <ENUM-VALUE IDENTIFIER="_myWK8LxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:36:17.338+02:00" LONG-NAME="Accepted">
+              <PROPERTIES>
+                <EMBEDDED-VALUE/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+            <ENUM-VALUE IDENTIFIER="_ni4QALxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:36:22.319+02:00" LONG-NAME="Rejected">
+              <PROPERTIES>
+                <EMBEDDED-VALUE/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+          </SPECIFIED-VALUES>
+        </DATATYPE-DEFINITION-ENUMERATION>
+      </DATATYPES>
+      <SPEC-TYPES>
+        <SPEC-OBJECT-TYPE IDENTIFIER="_YKr-BLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:34:40.607+02:00" LONG-NAME="Requirement Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_YKr-BbxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:34:40.607+02:00" LONG-NAME="Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_YKr-A7xgEeaTW79kLcqDTA</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_qpjtELxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:36:41.977+02:00" LONG-NAME="ID">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_hBtpELxgEeaTW79kLcqDTA</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_skiMALxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:36:55.556+02:00" LONG-NAME="Author">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_iTQJcLxgEeaTW79kLcqDTA</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-ENUMERATION IDENTIFIER="_umyXoLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:37:09.702+02:00" LONG-NAME="Status">
+              <TYPE>
+                <DATATYPE-DEFINITION-ENUMERATION-REF>_ktUYILxgEeaTW79kLcqDTA</DATATYPE-DEFINITION-ENUMERATION-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-ENUMERATION>
+          </SPEC-ATTRIBUTES>
+        </SPEC-OBJECT-TYPE>
+        <SPECIFICATION-TYPE IDENTIFIER="_YKr-BrxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:34:40.607+02:00" LONG-NAME="Specification Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_YKr-B7xgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:34:40.607+02:00" LONG-NAME="Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_YKr-A7xgEeaTW79kLcqDTA</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPECIFICATION-TYPE>
+      </SPEC-TYPES>
+      <SPEC-OBJECTS>
+        <SPEC-OBJECT IDENTIFIER="_YKr-CLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:38:52.132+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The terms should be kept in MySQL database">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_YKr-BbxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="NON-F-REQ1">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_qpjtELxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Alexey">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_skiMALxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-ENUMERATION>
+              <VALUES>
+                <ENUM-VALUE-REF>_myWK8LxgEeaTW79kLcqDTA</ENUM-VALUE-REF>
+              </VALUES>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-ENUMERATION-REF>_umyXoLxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-ENUMERATION-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-ENUMERATION>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_YKr-BLxgEeaTW79kLcqDTA</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_3pUIELxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:44:44.300+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="NON-F-REQ2">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_qpjtELxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Glossary should be cross-platform">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_YKr-BbxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-ENUMERATION>
+              <VALUES>
+                <ENUM-VALUE-REF>_myWK8LxgEeaTW79kLcqDTA</ENUM-VALUE-REF>
+              </VALUES>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-ENUMERATION-REF>_umyXoLxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-ENUMERATION-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-ENUMERATION>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Alexey">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_skiMALxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_YKr-BLxgEeaTW79kLcqDTA</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_KVXXgLxhEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:40:14.963+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="NON-F-REQ3">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_qpjtELxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Glossary should be written in Java SE">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_YKr-BbxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Alexey">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_skiMALxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-ENUMERATION>
+              <VALUES>
+                <ENUM-VALUE-REF>_myWK8LxgEeaTW79kLcqDTA</ENUM-VALUE-REF>
+              </VALUES>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-ENUMERATION-REF>_umyXoLxgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-ENUMERATION-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-ENUMERATION>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_YKr-BLxgEeaTW79kLcqDTA</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+      </SPEC-OBJECTS>
+      <SPEC-RELATIONS>
+        <SPEC-RELATION IDENTIFIER="__2uY8LxhEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:46:14.134+02:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_YKr-CLxgEeaTW79kLcqDTA</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_3pUIELxgEeaTW79kLcqDTA</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TYPE/>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_CWCUALxiEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:46:26.634+02:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_KVXXgLxhEeaTW79kLcqDTA</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_3pUIELxgEeaTW79kLcqDTA</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TYPE/>
+        </SPEC-RELATION>
+      </SPEC-RELATIONS>
+      <SPECIFICATIONS>
+        <SPECIFICATION IDENTIFIER="_YKr-CrxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:34:40.607+02:00" LONG-NAME="Specification Document">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Requirements Document">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_YKr-B7xgEeaTW79kLcqDTA</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_YKr-BrxgEeaTW79kLcqDTA</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_YKr-DLxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:34:40.607+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_YKr-CLxgEeaTW79kLcqDTA</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_3ptJobxgEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:38:08.394+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_3pUIELxgEeaTW79kLcqDTA</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_KVvyAbxhEeaTW79kLcqDTA" LAST-CHANGE="2016-12-07T11:40:14.963+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_KVXXgLxhEeaTW79kLcqDTA</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+      </SPECIFICATIONS>
+    </REQ-IF-CONTENT>
+  </CORE-CONTENT>
+  <TOOL-EXTENSIONS>
+    <REQ-IF-TOOL-EXTENSION>
+      <configuration:ProrToolExtension>
+        <configuration:specViewConfigurations>
+          <configuration:ProrSpecViewConfiguration specification="_YKr-CrxgEeaTW79kLcqDTA">
+            <configuration:columns>
+              <configuration:Column label="ID" width="100"/>
+              <configuration:Column label="Description" width="217"/>
+              <configuration:Column label="Status"/>
+              <configuration:Column label="Author" width="67"/>
+            </configuration:columns>
+            <configuration:leftHeaderColumn>
+              <configuration:Column label="Lead Header Column" width="30"/>
+            </configuration:leftHeaderColumn>
+          </configuration:ProrSpecViewConfiguration>
+        </configuration:specViewConfigurations>
+        <configuration:generalConfiguration>
+          <configuration:ProrGeneralConfiguration>
+            <configuration:labelConfiguration>
+              <configuration:LabelConfiguration>
+                <defaultLabel>Description</defaultLabel>
+              </configuration:LabelConfiguration>
+            </configuration:labelConfiguration>
+          </configuration:ProrGeneralConfiguration>
+        </configuration:generalConfiguration>
+        <configuration:presentationConfigurations>
+          <configuration:ProrPresentationConfigurations>
+            <configuration:presentationConfigurations/>
+          </configuration:ProrPresentationConfigurations>
+        </configuration:presentationConfigurations>
+      </configuration:ProrToolExtension>
+    </REQ-IF-TOOL-EXTENSION>
+  </TOOL-EXTENSIONS>
+</REQ-IF>
