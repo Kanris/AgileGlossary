@@ -28,6 +28,8 @@ public class AddEditWindow extends JFrame {
 	
 	private static final String ADD_WINDOW_TITLE = "Add new Term"; //window title for ADD operation
 	private static final String EDIT_WINDOW_TITLE = "Edit Term - "; //window title for EDIT operation
+	
+	private Term editTerm = null;
 
 	/**
 	 * Create the frame.
@@ -96,6 +98,11 @@ public class AddEditWindow extends JFrame {
 		contentPane.add(btnAdd);
 		
 		JButton btnDelete = new JButton("Delete");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				deleteTerm();
+			}
+		});
 		btnDelete.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
 		btnDelete.setBounds(234, 280, 77, 23);
 		contentPane.add(btnDelete);
@@ -120,6 +127,8 @@ public class AddEditWindow extends JFrame {
 			txtTranscription.setText(editTerm.getTranscription());
 			txtDescription.setText(editTerm.getDescription());
 			
+			this.editTerm = editTerm;
+			
 		}
 		
 		this.type = type;
@@ -141,11 +150,10 @@ public class AddEditWindow extends JFrame {
 		if (hasValues(name, transcription, description)) {
 			
 			Term term = getTerm(name, transcription, description);
-			JOptionPane.showMessageDialog(this, term);
 			
 			if (type == MainWindow.WindowType.ADD) {
 				
-				
+				DBHandler.addNewTerm(term);
 				closeWindow(true);
 				
 			} else if (type == MainWindow.WindowType.EDIT) {
@@ -175,6 +183,17 @@ public class AddEditWindow extends JFrame {
 		if (description.isEmpty()) return false;
 		
 		return true;
+		
+	}
+	
+	private void deleteTerm() {
+		
+		if (editTerm != null) {
+			
+			DBHandler.deleteTerm(editTerm.getName());
+			closeWindow(true);
+			
+		}
 		
 	}
 

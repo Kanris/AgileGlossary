@@ -24,6 +24,13 @@ public class DBHandler {
 		
 	}
 	
+	private static void createConnection() {
+		
+		if (conn == null)
+			conn = connectToDB();
+		
+	}
+	
 	private static void showErrorMessage(Exception e) {
 		
 		JOptionPane.showMessageDialog(null, e);
@@ -34,7 +41,7 @@ public class DBHandler {
 		
 		try {
 			
-			conn = connectToDB();
+			createConnection();
 			
 			String query = "SELECT * from Glossary";
 			PreparedStatement pst = conn.prepareStatement(query);
@@ -52,5 +59,49 @@ public class DBHandler {
 		 
 		
 	}
+	
+	public static void addNewTerm(Term newTerm) {
+		
+		try {
+			
+			createConnection();
+			
+			String query = "INSERT INTO Glossary(term, transcription, description) VALUES(?,?,?)";		
+			PreparedStatement pst = conn.prepareStatement(query);
+			pst.setString(1, newTerm.getName());
+			pst.setString(2, newTerm.getTranscription());
+			pst.setString(3, newTerm.getDescription());
+			
+			pst.execute();
+			
+		} catch (Exception e) {
+			
+			showErrorMessage(e);
+
+		}
+		
+	}
+	
+	public static void deleteTerm(String term) {
+		
+		try {
+			
+			createConnection();
+			
+			String query = "DELETE FROM Glossary WHERE term = ?";
+			PreparedStatement pst = conn.prepareStatement(query);
+			pst.setString(1, term);
+			
+			pst.execute();
+			
+		} catch (Exception e) {
+			
+			showErrorMessage(e);
+			
+		}
+		
+	}
+	
+	
 	
 }
