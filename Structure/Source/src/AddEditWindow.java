@@ -32,7 +32,7 @@ public class AddEditWindow extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public AddEditWindow(MainWindow.WindowType type) {
+	public AddEditWindow(MainWindow.WindowType type, Term editTerm) {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setBounds(100, 100, 416, 339);
@@ -46,41 +46,41 @@ public class AddEditWindow extends JFrame {
 			}
 		});		
 		
-		JLabel lblName = new JLabel("Name");
-		lblName.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		lblName.setBounds(12, 11, 53, 14);
-		contentPane.add(lblName);
+		JLabel lblTerm = new JLabel("Term");
+		lblTerm.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
+		lblTerm.setBounds(12, 11, 53, 14);
+		contentPane.add(lblTerm);
 		
 		txtName = new JTextField();
 		txtName.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		txtName.setBounds(12, 36, 174, 20);
+		txtName.setBounds(12, 36, 186, 20);
 		contentPane.add(txtName);
 		txtName.setColumns(10);
 		
 		JLabel lblTranscription = new JLabel("Transcription");
 		lblTranscription.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		lblTranscription.setBounds(212, 11, 84, 14);
+		lblTranscription.setBounds(12, 67, 84, 14);
 		contentPane.add(lblTranscription);
 		
 		txtTranscription = new JTextField();
 		txtTranscription.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		txtTranscription.setBounds(212, 36, 186, 20);
+		txtTranscription.setBounds(12, 96, 186, 20);
 		contentPane.add(txtTranscription);
 		txtTranscription.setColumns(10);
 		
 		JLabel lblDescription = new JLabel("Description");
 		lblDescription.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		lblDescription.setBounds(12, 73, 77, 14);
+		lblDescription.setBounds(222, 11, 77, 14);
 		contentPane.add(lblDescription);
 		
 		txtDescription = new JEditorPane();
 		txtDescription.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		txtDescription.setBounds(12, 98, 174, 162);
+		txtDescription.setBounds(224, 36, 174, 233);
 		contentPane.add(txtDescription);
 		
 		JPanel btnsPanel = new JPanel();
 		btnsPanel.setBorder(UIManager.getBorder("TextField.border"));
-		btnsPanel.setBounds(212, 98, 186, 162);
+		btnsPanel.setBounds(12, 127, 186, 138);
 		contentPane.add(btnsPanel);
 		
 		JButton btnAdd = new JButton("Save");
@@ -92,18 +92,19 @@ public class AddEditWindow extends JFrame {
 			}
 		});
 		btnAdd.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		btnAdd.setBounds(314, 280, 84, 23);
+		btnAdd.setBounds(328, 280, 70, 23);
 		contentPane.add(btnAdd);
 		
 		JButton btnDelete = new JButton("Delete");
 		btnDelete.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
-		btnDelete.setBounds(212, 280, 84, 23);
+		btnDelete.setBounds(234, 280, 77, 23);
 		contentPane.add(btnDelete);
 	
-		setWindowType(type, btnAdd, btnDelete);
+		setWindowType(type, btnAdd, btnDelete, editTerm);
 	}
 	
-	private void setWindowType(MainWindow.WindowType type, JButton btnAdd, JButton btnDelete) {
+	private void setWindowType(MainWindow.WindowType type, 
+			JButton btnAdd, JButton btnDelete, Term editTerm) {
 		
 		if (type == MainWindow.WindowType.ADD) {
 			
@@ -113,7 +114,11 @@ public class AddEditWindow extends JFrame {
 			
 		} else {
 			
-			setTitle(EDIT_WINDOW_TITLE);
+			
+			setTitle(EDIT_WINDOW_TITLE + editTerm.getName());
+			txtName.setText(editTerm.getName());
+			txtTranscription.setText(editTerm.getTranscription());
+			txtDescription.setText(editTerm.getDescription());
 			
 		}
 		
