@@ -1,0 +1,1 @@
+java -jar AgileGlossary.jar $1
